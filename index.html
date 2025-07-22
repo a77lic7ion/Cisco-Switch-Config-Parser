@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NetConfig Analyzer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'brand-primary': '#F97316', // Orange 500
+            'brand-secondary': '#FB923C', // Orange 400
+            'brand-accent': '#EF4444', // Red 500
+            'dark-background': '#000000', // Black
+            'medium-background': '#111827', // Gray 900
+            'light-background': '#1F2937', // Gray 800
+            'dark-text': '#F9FAFB', // Gray 50
+            'medium-text': '#D1D5DB', // Gray 300
+            'light-text': '#9CA3AF', // Gray 400
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #000000; /* Black */
+      color: #F9FAFB; /* Gray 50 */
+    }
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #111827; /* Gray 900 */
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #374151; /* Gray 700 */
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #4B5563; /* Gray 600 */
+    }
+  </style>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   <script src="https://cdn.jsdelivr.net/npm/ipaddr.js@1.9.1/ipaddr.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.6.0",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "recharts": "https://esm.sh/recharts@^3.0.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-dark-background">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
